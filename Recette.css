@@ -24,9 +24,9 @@ p.categorie {
 
 div.contenu {
     background-color: white;
-    margin: 0px 10% 80px 10%;
-    padding: 30px;
-    min-width: 350px;
+    margin: 0px 2% 12px 2%;
+    padding: 8px;
+    /*min-width: 350px;*/
     box-shadow : 0 0 8px 8px rgb(0, 0, 0, .2);
 }
 
@@ -66,24 +66,27 @@ div.info {
     position: relative;
 }
 
-table.info{
+table.info {
     position: absolute; 
-    bottom:0; 
-    width: 100%; 
+    bottom:0;
+    height: 50px; 
+    width: 100%;
     color: white; 
-    background-color: #6C829DB0; 
-    height: 80px
+    background-color: #6C829DB0;    
 }
 
 table.info td {
     text-align: center;
     vertical-align: top;
+    font-size: 12px;
 }
 
 table.info th {
     text-align: center;
     vertical-align: bottom;
+    padding-top: 8px;
     padding-bottom: 8px;
+    font-size: 14px;
 }
 
 img.info {
@@ -95,7 +98,7 @@ img.info {
 }
 
 div.colonne {
-    width: 45%;
+    width: 100%;
     margin-top: 20px;
 }
 
@@ -109,11 +112,6 @@ div.colonne h2 {
 
 div.colonne1 {
     display: inline-block;
-    margin-right: 10%;
-}
-
-div.colonne2 {
-    float:right;
 }
 
 div.col1 p {
@@ -156,6 +154,45 @@ table.preparation tr {
     height: 50px;
     vertical-align: middle;
 }
-
 /* Mon commenta
 /* Mon commentaire CSS */
+
+@media only screen and (min-width: 768px) {
+    div.contenu {
+        min-width: 350px;
+        padding: 30px;
+        margin: 0px 10% 80px 10%;
+    }
+
+    table.info{
+        height: 80px
+    }
+
+    table.info td {
+        font-size: 14px;
+    }
+
+    table.info th {
+        font-size: 16px;
+    }
+
+    div.colonne {
+        width: 45%;
+    }
+    
+    div.colonne1 {
+        margin-right: 10%;
+    }
+    
+    div.colonne2 {
+        float:right;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    div.contenu {
+        margin-left: auto;
+        margin-right: auto;
+        width: 645px;        
+    }   
+}
